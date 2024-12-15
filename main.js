@@ -17,11 +17,10 @@
 
 // Massiv ichida 20 dan kichik bo‘lgan birinchi toq sonning indeksini toping.
 
-
 // let number = [2, 2, 5, 6, 4, 20, 33, 77]
 
 // let res = number.find(value => value  < 20 && value % 2 == 1 )
-   
+
 // console.log(`index: ${number.indexOf(res)}\nvalur: ${res}`);
 
 // =====================
@@ -154,7 +153,6 @@
 
 // Matnning oxiridan ikkinchi belgisini toping.
 
-
 // function texts(text) {
 //     let str = text.toString();
 //     return str.charAt(str.length -3)
@@ -227,7 +225,7 @@
 // Matnning oxirgi uchta belgisini substring yordamida oling.
 
 // let matn = ["element, non, salom"]
-// let matn2 = matn.toString().substring(17, 19) 
+// let matn2 = matn.toString().substring(17, 19)
 // console.log(matn2);
 
 // =====================
@@ -268,14 +266,14 @@
 
 // Matnning birinchi yarmidan kichik harflar, ikkinchi yarmidan katta harflar yarating.
 
-// let matn = ["HELLOworld"]; 
-// let text = matn[0]; 
+// let matn = ["HELLOworld"];
+// let text = matn[0];
 
-// let matn2 = Math.floor(text.length / 2); 
-// let first = text.substring(0, matn2).toLowerCase(); 
-// let second = text.substring(matn2).toUpperCase(); 
-// let texts = first + second; 
-// console.log(texts); 
+// let matn2 = Math.floor(text.length / 2);
+// let first = text.substring(0, matn2).toLowerCase();
+// let second = text.substring(matn2).toUpperCase();
+// let texts = first + second;
+// console.log(texts);
 
 // =====================
 
@@ -387,12 +385,10 @@
 // Matnning ichidagi birinchi "a" harfini "o" harfiga almashtiring.
 
 // function binder(text) {
-//     return text.toString().replace("a", "o"); 
+//     return text.toString().replace("a", "o");
 // }
 
 // console.log(binder(["anor"]));
-
-
 
 // =====================
 
@@ -401,11 +397,10 @@
 // Matnning barcha “ ” (bo‘sh joy) belgilarini “_” belgilariga almashtiring.
 
 // function binder(text) {
-//     return text.toString().replace(/ /g, "_"); 
+//     return text.toString().replace(/ /g, "_");
 // }
 
-
-// console.log(binder(["anor olma anjir"])); 
+// console.log(binder(["anor olma anjir"]));
 
 // =====================
 
@@ -416,10 +411,10 @@
 // Matnni har bir so‘zdan ajratib massivga aylantiring.
 
 // function binder(text) {
-//     return text.toString().split(" "); 
+//     return text.toString().split(" ");
 // }
 
-// console.log(binder(["anor olma anjir"])); 
+// console.log(binder(["anor olma anjir"]));
 
 // =====================
 
@@ -428,10 +423,10 @@
 // Matnni har bir belgidan ajratib massiv yarating.
 
 // function binder(text) {
-//     return text.toString().split(""); 
+//     return text.toString().split("");
 // }
 
-// console.log(binder("anor olma anjir")); 
+// console.log(binder("anor olma anjir"));
 
 // =====================
 
@@ -445,7 +440,7 @@
 //     return text.indexOf("a");
 // }
 
-// console.log(binder("banana")); 
+// console.log(binder("banana"));
 
 // =====================
 
@@ -454,10 +449,10 @@
 // Matndagi "e" harfi oxirgi marta qayerda uchrayotganini toping.
 
 // function binder(text) {
-//     return text.lastIndexOf("e"); 
+//     return text.lastIndexOf("e");
 // }
 
-// console.log(binder("elephant")); 
+// console.log(binder("elephant"));
 
 // =====================
 
@@ -467,11 +462,10 @@
 // Matn ichida "hello" so‘zi bor-yo‘qligini tekshiring.
 
 // function binder(text) {
-//     return text.indexOf("hello") !== -1; 
+//     return text.indexOf("hello") !== -1;
 // }
 
-// console.log(binder("hello, how are you")); 
-
+// console.log(binder("hello, how are you"));
 
 // =====================
 
@@ -479,11 +473,10 @@
 // Matn ichida "!" belgisi mavjudligini aniqlang.
 
 // function binder(text) {
-//     return text.indexOf("!") !== -1; 
+//     return text.indexOf("!") !== -1;
 // }
 
-// console.log(binder("Olma!")); 
-
+// console.log(binder("Olma!"));
 
 // =====================
 
@@ -502,7 +495,7 @@
 
 // Massiv ichida obyektlar
 
-// 1. users massivida age qiymati 25 dan katta bo‘lgan foydalanuvchilarni toping. 
+// 1. users massivida age qiymati 25 dan katta bo‘lgan foydalanuvchilarni toping.
 
 // let users = [
 //     { id: 1, name: "Ali", age: 25, isActive: true },
@@ -515,7 +508,7 @@
 //         console.log(user);
 //     }
 // })
- 
+
 // =====================
 
 // 2-misol
@@ -533,7 +526,7 @@
 //         console.log(value);
 //     }
 // })
-  
+
 // =====================
 
 // 3-misol
@@ -584,13 +577,89 @@
 // let products = [
 //     { id: 101, name: "Laptop", price: 1000, rating: 4.5 },
 //     { id: 102, name: "Phone", price: 500, rating: 4.2 },
-//     { id: 103, name: "Tablet", price: 300, rating: 4.8 }
+//     { id: 103, name: "Tablet", price: 300, rating: 4.8 },
+//   ];
+
+//   function binder(products) {
+//     let arr = products[0];
+//     for (let i = 0; i < products.length; i++) {
+//       if (products[i].price < arr.price) {
+//         arr = products[i];
+//       }
+//     }
+//     return arr;
+//   }
+
+//   console.log(binder(products));
+
+// =====================
+
+// 6-misol
+
+// let users = [
+//     { id: 1, name: "Ali", age: 25, isActive: true },
+//     { id: 2, name: "Bobur", age: 30, isActive: false },
+//     { id: 3, name: "Zara", age: 22, isActive: true }
 // ];
 
-// let maxRating = Math.max(...products.map(product => product.rating));
-
-// let result = products.filter(product => product.rating === maxRating);
-
+// let result = users.map(user => ({ name: user.name, age: user.age }));
 // console.log(result);
 
 // =====================
+
+// 8-misol
+
+// tasks massivida title qiymati "Clean room" bo‘lgan vazifaning indeksini aniqlang.
+
+// let tasks = [
+//     { id: 1, title: "Do homework", status: "completed" },
+//     { id: 2, title: "Clean room", status: "pending" },
+//     { id: 3, title: "Go shopping", status: "pending" }
+// ];
+
+// let index = tasks.findIndex(task => task.title === "Clean room");
+
+// console.log(index);
+
+// =====================
+
+// 9-misol
+
+// users massivida barcha foydalanuvchilarning age qiymatlari yig‘indisini hisoblang.
+
+// let users = [
+//     { id: 1, name: "Ali", age: 25, isActive: true },
+//     { id: 2, name: "Bobur", age: 30, isActive: false },
+//     { id: 3, name: "Zara", age: 22, isActive: true }
+// ];
+
+// let yoshlar = 0;
+// for (let i = 0; i < users.length; i++) {
+//     yoshlar += users[i].age;
+// }
+
+// console.log(yoshlar);
+
+// =====================
+
+// 10-misol
+
+// products massividagi har bir mahsulotning price qiymatini 10% ga kamaytirib yangi massiv yarating.
+
+let products = [
+    { id: 101, name: "Laptop", price: 1000, rating: 4.5 },
+    { id: 102, name: "Phone", price: 500, rating: 4.2 },
+    { id: 103, name: "Tablet", price: 300, rating: 4.8 }
+]
+
+let binder = products.map(function (product) {
+    return {
+        id: product.id,
+        name: product.name,
+        price: product.price * 0.10,
+        rating: product.rating
+    }
+})
+
+console.log(binder)
+
